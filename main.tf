@@ -21,6 +21,8 @@ resource "vsphere_virtual_machine" "vm" {
   name             = var.vm_name
   resource_pool_id = data.vsphere_compute_cluster.compute_cluster.resource_pool_id
   datastore_id     = data.vsphere_datastore.datastore.id
+  wait_for_guest_net_timeout = 0
+  wait_for_guest_ip_timeout  = 0
 
   num_cpus = var.num_cpus
   memory   = var.memory
