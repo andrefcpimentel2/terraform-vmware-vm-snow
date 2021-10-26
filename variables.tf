@@ -16,11 +16,11 @@ variable "vm_name" {
 }
 
 variable "num_cpus" {
-  default     = "2"
+  default     = "1"
 }
 
 variable "memory" {
-  default     = "1024"
+  default     = "512"
 }
 
 variable "guest_id" {
@@ -28,5 +28,5 @@ variable "guest_id" {
 }
 
 variable "disk_size" {
-  default     = "10"
+  default     = "5"
 }
